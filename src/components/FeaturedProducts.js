@@ -1,4 +1,5 @@
-import React , { forwardRef }from 'react';
+import React, { forwardRef } from 'react';
+import { Link } from 'react-router-dom';
 import './FeaturedProducts.css';
 
 const products = [
@@ -32,7 +33,9 @@ const FeaturedProducts = forwardRef((props, ref) => {
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <button>View Product</button>
+            <Link to={`/product/${product.id}`}>
+              <button>View Product</button>
+            </Link>
           </div>
         ))}
       </div>
