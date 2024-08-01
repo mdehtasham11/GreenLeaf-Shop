@@ -1,0 +1,17 @@
+.footer {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer .social-links {
+    margin-top: 10px;
+  }
+  
+  .footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
